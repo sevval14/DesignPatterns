@@ -1,0 +1,93 @@
+Access modifiers:
+-public : class , package , subclass(with extend in same packet),subclass(with extend in diffrent packet),outside
+-protected :class , package , subclass(with extend in same packet),subclass(with extend in diffrent packet)
+-default :class , package , subclass(with extend in same packet)
+-private:class 
+
+
+
+Overidding and Overloadding 
+-Overrideing When we use inheritance It happens. for exapmle I made extend human class from animal class.
+there is a method. method name is move method.I can write move method inside human and aniaml class.
+If there is problem in class .this error appers during runtime(runtime during run)
+-Overloadding happens in same class . I can same name two class .one class have one parametre 
+second class has 2 proametre. If there is problem in class .this error appers during compiler (complier before run)
+
+
+Composition and Inheritance
+
+-this is composition:
+
+	class Motor {
+	    public void çalıştır() {
+	        System.out.println("Motor çalışıyor.");
+	    }
+	}
+	
+	class Araç {
+	    private Motor motor;
+	
+	    public Araç() {
+	        motor = new Motor();
+	    }
+	
+	    public void hareketEt() {
+	        motor.çalıştır();
+	        System.out.println("Araç hareket ediyor.");
+	    }
+	}
+
+
+-this is inheritance:
+	   
+	class Şekil {
+	    public void çiz() {
+	        System.out.println("Şekil çiziliyor.");
+	    }
+	}
+	
+	class Dikdörtgen extends Şekil {
+	    @Override
+	    public void çiz() {
+	        System.out.println("Dikdörtgen çiziliyor.");
+	    }
+	}	
+	
+	
+-if (obs instanceof WeatherData) {: Bu ifade, obs adlı nesnenin WeatherData 
+sınıfına ait bir örnek olup olmadığını kontrol eder	. instanceOf
+
+
+-GUI birçok proglamlam dilinde var ve arayüz oluşmaısıı sağlar mesela. 
+	C++ : Windows Forms ve WPF
+	Python : Tkinter, PyQt, Kivy ve wxPython
+	Java : Swing
+	JavaScript :  HTML ve CSS 
+	
+
+-EDT javadaki swing kütüphanesinin bir aracı olarak çalışır.arkasındaki mekanizma. EDT, bir Swing uygulamasının 
+grafiksel kullanıcı arayüzünün (GUI) ve olaylarının güvenli bir şekilde işlenmesini sağlayan bir iş parçacığıdır.
+EDT bir çok threadın aynı anda çalışmasını olanak sağlar. Kullanıcı etkileşimleri (örneğin, düğmelere tıklama, 
+fare hareketleri) gibi olaylar EDT tarafından işlenir. Bu, olayların doğru sırada ve güvenli bir şekilde 
+işlenmesini sağlar.
+
+
+-JavaBeans, Java programlama dilinde yazılmış, özellikleri (properties) ve olayları (events) olan, yeniden 
+kullanılabilir bileşenlerin (components) standart bir yaklaşımını tanımlayan bir yazılım bileşeni modelidir.
+PropertyChangeSupport sınıfı java.beans paketi altında yer alır
+
+-PropertyChangeSupport, JavaBeans standartlarını takip eden Java sınıfları için özellik değişikliklerini 
+yönetmek ve bu değişiklikleri dinleyicilere (listeners) iletmek için kullanılır.
+
+-" Casting," bir programlama terimi olarak, bir değişkenin veya nesnenin türünün (veri türünün) başka bir 
+türe dönüştürülmesini ifade eder. Genelde javada kullanılırmış.
+
+ 	Implicit Casting:
+   		int sayi = 42;
+		double ondalikSayi = sayi; 
+		
+	Explicit Casting:	
+		double ondalikSayi = 42.0;
+		int sayi = (int) ondalikSayi;
+		
+				
